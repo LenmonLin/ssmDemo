@@ -2,6 +2,7 @@ package com.ssmdemo.controller;
 
 import java.util.List;
 
+import com.ssmdemo.util.Msg;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.test.context.TestExecutionListeners;
@@ -20,6 +21,19 @@ public class UserController {
 
 	@Autowired
 	private UserService userService;
+
+
+	@RequestMapping(value = "/index")
+	@ResponseBody
+	public Msg showIndex(){
+		/**
+		 *@Description  测试json格式
+		 *@params  []
+		 *@author LemonLin
+		 *@date  2018/7/27
+		 */
+		return Msg.success();
+	}
 	
 	
 	/**
