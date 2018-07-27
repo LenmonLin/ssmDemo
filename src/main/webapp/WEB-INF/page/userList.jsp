@@ -48,7 +48,7 @@ $(function(){
   			<th>功能</th>
   		</tr>
   		 
-  		<%-- <c:forEach items="${userList}"  var="user">
+  		<c:forEach items="${userList}"  var="user">
      	<tr>
   			<td>${user.id}</td>
   			<td>${user.username}</td>
@@ -56,7 +56,7 @@ $(function(){
   			<td>${user.email}</td>
   			<td><a href="${ctx}/user/addLoad">增加</a> <a href="${ctx}/user/editLoad?id=${user.id}">修改</a>   <a href="${ctx}/user/delete?id=${user.id}">删除</a> </td>
   		</tr>
-     </c:forEach> --%>
+     </c:forEach>
   	</table>
     
 	
